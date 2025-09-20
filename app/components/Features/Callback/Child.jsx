@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-const Callback = ({getColor}) => {
+const Child = ({getColor}) => {
     const [activecolor,setActiveColor]=useState("");
 
 
@@ -20,4 +20,4 @@ const Callback = ({getColor}) => {
 
   )
 }
-export default Callback
+export default Child

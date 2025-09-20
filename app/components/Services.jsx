@@ -1,5 +1,7 @@
+import { serviceData } from '@/assets/assets'
 import React from 'react'
-
+import Image from 'next/image';
+import { assets } from '@/assets/assets'
 const Services = () => {
   return (
 
@@ -9,9 +11,21 @@ const Services = () => {
             What I offer
         </h4>
         <h2 className='text-center text-5xl font-Ovo'>Services </h2>
-        <p className='text-center'>1.21.29</p>
+        <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>I am a frontend developer from Dhaka, Bangladesh with 10 years of experience in one companies like <strong>SoftBD</strong>.</p>
+<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 my-10">
+          {serviceData.map(({icon,title,description,link},index)=>(
+            <div key={index} className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[0_0_10px_#22991a] cursor-pointer hover:bg-emerald-200-500 hover:translate-y-2 duration-500 '>
+              <Image src={icon} alt='service icon' className='w-10'></Image>
+              <h3 className='text-lg my-4 text-gray-700'>{title}</h3>
+              <p className='text-sm text-gray-500 leading-5 '>{description}</p>
+              <a href={link} className='flex items-center gap-2 text-sm mt-5'>
+                Read more <Image src={assets.right_arrow} alt='' className='w-4'/>
+              </a>
+            </div>
+          ))}
+        
 
-
+        </div>
 
 
 

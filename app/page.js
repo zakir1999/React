@@ -7,11 +7,11 @@ import { Parent } from "./components/Features/Callback/Parent";
 export default function Home() {
   return (
     <>
-    {/* <Navbar/>
+    <Navbar/>
     <Header/>
     <About/>
-    <Services/> */}
-    <Parent/>
+    <Services/>
+
     </>
   );
 }
