@@ -12,8 +12,11 @@ import Image from 'next/image';
         <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>Welcom to my web developerment portfolio! Explore a collection of projects showcasing my expertise in front-end developemtn.</p>
 <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 my-10">
             {workData.map(({title,description,bgImage},index)=>(
-                <div key={index} className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'style={{backgroundImage:`url(${bgImage})`}}>
-                    <div>
+<div
+  key={index}
+  className={`aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group`}
+  style={{ backgroundImage: `url(${bgImage})` }}
+>                    <div>
                         <h2>{title}</h2>
                         <p>{description}</p>
                     </div>

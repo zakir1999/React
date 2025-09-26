@@ -36,12 +36,19 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import Ml from './ML.png';
-
+import  mobile from './lgd.jpg';
+import bangladesh from './bangladesh.png';
+import lgd from './mobile.png';
+import web from './web.jpg';
 
 
 export const assets = {
     user_image,
     Ml,
+    web,
+    mobile,
+    lgd,
+    bangladesh,
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -84,22 +91,25 @@ export const workData = [
     {
         title: 'Frontend project',
         description: 'Web Design',
-        bgImage: '/work-1.png',
+        bgImage: assets.web.src
     },
     {
-        title: 'Geo based app',
+        title: 'Foodie',
         description: 'Mobile App',
-        bgImage: '/work-2.png',
+        bgImage: assets.mobile.src,
+    
     },
     {
         title: 'Photography site',
         description: 'Web Design',
-        bgImage: '/work-3.png',
+       bgImage:assets.lgd.src,
+    
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
-        bgImage: work,
+        bgImage:assets.bangladesh.src,
+    
     },
 ]
 
