@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import {assets} from '@/assets/assets';
 import { useRef,useEffect,useState} from 'react';
-const  Navbar = () => {
+const  Navbar = ({darkTheme,setdarkTheme}) => {
 
 
   const sideMenuRef=useRef();
@@ -51,9 +51,10 @@ useEffect(()=>{
             <li><a className='font-Ovo'href='#contact'>Contact Me</a></li>
         </ul>
         <div className='flex items-center gap-5'>
-           <button>
-            <Image src={assets.moon_icon} alt="" className='w-6'/>
-            </button>
+           <button >
+           
+            <Image src={ assets.moon_icon} alt="" className='w-6'/>
+            </button >
             <a className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-800 rounded-full ml-4 font-ovo" href="#contact">Contact<Image src={assets.arrow_icon} alt="" className='w-3'/></a>
            <button className='black md:hidden ml-3' onClick={openMenu}>
             <Image src={assets.menu_black} alt="" className='w-6'/>
